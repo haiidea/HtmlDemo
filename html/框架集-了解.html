@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--
+	主要用在后台
+	框架标签和body标签不能同时使用
+	*只能用一次
+	被引用的页面不需要完成的结构，只需要body里面的内容
+-->
+<html>
+	<meta charset="UTF-8">
+	<frameset rows="20%,70%,*">
+		<frame src="frame_top.html"/>
+		<frameset cols="20%,*">
+			<frame src="frame_left.html"/>
+			<frame name="right"/>
+		</frameset>
+		<frame src="frame_bottom.html"/>
+	</frameset>
+</html>

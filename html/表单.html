@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+	表达里的数据要传给后台，必须制定name
+	form：相当于容器
+	input：输入默认输入类型是text普通输入框
+		radio-单选
+		name-定义以后，radio的name相同的不能同时选择
+		checkbox-多选
+		file-选择文件
+		value-指定按钮上的文本,指定上传的值，在选择时把值传递给后台，单选多选下拉文本框默认值
+		submit-提交
+		image-也是提交，不常用
+		reset-重置
+		button-普通按钮，事件由自己处理
+		hidden:隐藏域
+		placeholder：提示文本，只能用在输入文本里
+		checked:默认选中，用在单选和复选框
+	select:下拉框
+		selected-默认选中
+	textarea：文本域
+	
+	action:指定传递数据的地址
+	method:请求方式get(默认,传输数据大小最大一般是1kb),post(也不是无限大，由后台服务器限制大小)
+-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="" method="post">
+			用户名:<input name="username" type="text" placeholder="请输入您的用户名"/><br/>
+			密码:<input name="pw" type="password" placeholder="请输入密码"/><br/>
+			性别:<input type="radio" name="ren" checked value="1"/>男<input type="radio" name="ren" value="2"/>女<br/>
+			爱好:<input name="hobby" type="checkbox" checked/>篮球<input name="hobby" type="checkbox" />足球<br />
+			头像：<input name="icon" type="file" /><br />
+			城市:<select name="city">
+				<option>--请选择--</option>
+				<optgroup label="一线">
+					<option selected value="beijing">北京</option>
+					<option>上海</option>
+					<option>深圳</option>
+				</optgroup>
+				<optgroup label="二线">
+					<option>北京</option>
+					<option>上海</option>
+					<option>深圳</option>
+				</optgroup>
+			</select><br />
+			自我介绍:<textarea name="inc" cols="90" rows="2" placeholder="请输入自我介绍"></textarea><br />
+			<input type="submit" value="注册" /><br />
+			<input type="image" src="../img/logo.gif" /><br />
+			<input type="reset" value="重置" /><br />
+			<input type="button" value="自定义事件" /><br />
+		</form>
+	</body>
+</html>

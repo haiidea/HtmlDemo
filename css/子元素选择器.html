@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+	id选择器
+	同一个页面中一个id只能出现一次
+	当前页面有效
+	样式提取 --选择器，选择器
+-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*h2下的所有span显示红色*/
+			/*h2 span{
+				color: red;
+			}*/
+			/*class=class1的h2标签下的所有的span标签的颜色为绿色*/
+			/*h2 .class1 span {
+				color: blue;
+			}*/
+			/*id=id1的h2标签下的所有span标签内容蓝色*/
+			h2#id1 span {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>
+			这是普通2<span>标签</span>
+			<p>
+				hello<span>word</span>
+			</p>
+		</h2>
+		<h2 class="class1">这是class=class1的h2<span>标签</span></h2>
+		<h2 id="id1">这是id1=id1的h2<span>标签</span></h2>
+		<p>这是p<span>标签</span></p>
+	</body>
+</html>

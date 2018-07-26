@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+	页面布局都是使用css+div实现
+	p,div标签前后内容会换行
+	div是一个容器，不好改变里面内容的样式，可放入任何标签
+	span也是容器,不好更改任何效果，前后内容不会换行，一般放入的内容有：文本，a标签
+	
+	继承：父元素定义了样式，子元素也一样有效果，
+		不是所有的样式都被继承,例如边框
+		
+-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				color: red;
+				border: #f0f 1px solid;
+				
+			}
+		</style>
+	</head>
+	<body>
+		adfafad
+		<div>
+			adfafad
+			<span>adfafad</span>
+			<span>adfafad</span>
+			<p>p标签</p>
+		</div>
+		adfafad
+		<span>adfafad</span>
+		<span>adfafad</span>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			table,td,th{
+				border: 1px solid red;
+				/*
+				 * 合并边框与下面的边框间距不能同时使用
+				 * border-collapse: collapse;
+				 * */
+				border-spacing: 20px ;
+				/*
+				 * 将标题放在表格下面
+				 */
+				caption-side: bottom;
+				/*
+				 * 空内容的单元格隐藏
+				 */
+				empty-cells: hide;
+				/*
+				 * 当单元格内容特别多时，固定单元格宽度
+				 */
+				table-layout: fixed;
+			}
+			table{
+				width: 90%;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption> 公司信息表</caption>
+			<tr>
+				<th>sdf</th>
+				<th>bnyh</th>
+				<th></th>
+			</tr>
+			<tr>
+				<td>aerdsfgsdfbgdfhdfxghsdgfASDFsX传说中大V最低消费V字形从V字形从电饭锅v</td>
+				<td>5bgtb</td>
+				<td>6nhy</td>
+			</tr>
+			<tr>
+				<td>2ghjy</td>
+				<td>yju76</td>
+				<td>hmj8</td>
+			</tr>
+			<tr>
+				<td>hgf76</td>
+				<td>fd8</td>
+				<td>dgh6</td>
+			</tr>
+		</table>
+	</body>
+</html>

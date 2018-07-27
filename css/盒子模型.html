@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 * 如果两个边框相邻并且都设置了边距，会被合并，以设置的最大值为准
+			 */
+			/*去掉所有默认边距
+			 */
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*
+			 * 外边距不会改变盒子大小
+			 * 宽高是设置的宽高+加边宽度的2倍+padding的值
+			 * css3 增加新属性box-sizing,设置padding和border不会更改盒子的宽高
+			 * padding: 10px 20px  上下10，左右20
+			 * padding:10px,20px,30px 上10，下30，左右20
+			 * padding:10px,20px,30px,40px 上右下左
+			 * margin可以指定负值  -10px
+			 * margin:0 auto 水平居中
+			 * 
+			 */
+			.div1{
+				position: relative;
+				top: 50px;
+				width: 200px;
+				height: 200px;
+				border: 5px solid red;
+				padding: 10px;
+				margin: 10px;
+			}
+			/*
+			 * 不是所有标签都有宽高
+			 * 块级模块才可以
+			 * 块级模块是独占一行的标签p,div,h1-h6,ul,li,ol,dl,dt,dd和替换元素 img,input,textarea
+			 */
+			/*
+			 * 替换元素 img,input,textarea
+			 */
+			span{
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+		<span>span</span>
+	</body>
+</html>

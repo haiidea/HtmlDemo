@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--做引用以后，不能再scrip里写代码了-->
+		<script type="text/javascript" src="first.js" ></script>
+		<script type="text/javascript" src="运算符.js" ></script>
+		<script type="text/javascript" src="函数数字正则.js" ></script>
+	</head>
+	<body>
+		
+		<!--函数绑定第一种方式   属性onclick-->
+		<input type="button" value="登录" onclick="fn2(22)"/>
+		
+		<!--函数绑定第一种方式  事件派发
+			1.查找元素，使用dom，document.getElementById("login")
+			2.派发事件
+		-->
+		<input id="login" type="button" value="登录2" "/>
+		
+	</body>
+</html>

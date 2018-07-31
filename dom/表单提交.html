@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form onsubmit=" return submitfn()">
+		用户名：<input type="text" id="unid" name="un" />
+		<input type="submit" value="注册" />
+		</form>
+		<script type="application/javascript">
+			function submitfn(){
+				var un=document.getElementById("unid")
+				if ("zhangshan"==un.value){
+					return true;
+				}else{
+					return false;
+				}
+				
+			
+			}
+		</script>
+	</body>
+</html>

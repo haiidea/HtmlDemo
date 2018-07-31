@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input city="shenzhen" type="button" name="na" id="id" value="注册" />
+		<script type="application/javascript">
+			var tag = document.getElementById("id");
+			console.log(tag.type) //只能获取本身的属性
+			console.log(tag.city) // 自定义属性不能这么获取
+			console.log(tag.getAttribute("city"))//一定能获取到，不管是自定义的还是本身的
+			
+			tag.type="text"
+			tag.city="guangzhou" //自定义的属性不能这么改
+			tag.setAttribute("city","guangzhou")
+			console.log(tag.getAttribute("city"))
+		</script>
+	</body>
+</html>

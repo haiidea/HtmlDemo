@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<select id="city" onchange="changefn(this)">
+			<option value="bj">被</option>
+			<option value="ti">天</option>
+			<option value="jj">深</option>
+		</select>
+		<script type="application/javascript">
+			function changefn(obj){ //推荐写法
+				console.log(obj.value)
+			}
+		</script>
+		<!--<select id="city" onchange="changefn()">
+			<option value="bj">被</option>
+			<option value="ti">天</option>
+			<option value="jj">深</option>
+		</select>-->
+		<!--<script type="application/javascript">
+			function changefn(){ // 老写法，不推荐
+				var a=document.getElementById("city")
+				console.log(a.value)
+			}
+		</script>-->
+	</body>
+</html>

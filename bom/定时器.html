@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="5s显示时间" onclick="showTime5()" />
+		<input type="button" value="时钟" onclick="openclock()" />
+		<input type="button" value="关闭时钟" onclick="closetime()" />
+		<script type="application/javascript">
+			function showTime(){
+				var time = new Date()
+				var sp=document.getElementById("ids")
+				sp.innerText=time
+			}
+			var timeout;
+			var time2=null
+			function showTime5(){
+				timeout=setTimeout("showTime()",5000)//执行一次
+			}
+			function close2(){
+				clearTimeout(timeout)
+			}
+			function openclock(){
+				time2=setInterval("showTime()",1000)//一直执行
+			}
+			function closetime(){
+				clearInterval(time2)
+			}
+		</script>
+		<span id="ids"></span>
+	</body>
+</html>

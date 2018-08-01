@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="#" method="get">
+			<table width="60%" height="60%" align="center" bgcolor="#FDF5E6">
+				<tr>
+					<td colspan="3">会员注册</td>
+				</tr>
+				<tr>
+					<td width="20%">手机号：</td>
+					<td width="40%">
+						<input type="text" name="username" id="usernameid" onblur="checknum(this)" />
+					</td>
+					<td width="40%">
+						<span id="username_msg"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>密码：</td>
+					<td>
+						<input type="password" name="pw" id="pwid" onblur="checkpw()"/>
+					</td>
+					<td><span id="pw_msg"></span></td>
+				</tr>
+				<tr>
+					<td>邮箱：</td>
+					<td><input type="text" name="email" id="emailid" onblur="checkemail()"/></td>
+					<td><span id="_msg"></span></td>
+				</tr>
+				<tr>
+					<td>出生日期</td>
+					<td><input type="date" name="date" id="date" onblur="date()"/></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						
+						<input type="submit" name="提交" value="提交" id="date" onblur="date()"/></td>
+					
+				</tr>
+			</table>
+		</form>
+		<script type="application/javascript">
+			function checknum(un){
+				var reg=new RegExp("^1[3456789]\\d{9}$")
+				var res =reg.test(un.value)
+				if(res){
+					document.getElementById("username_msg").innerHTML=""
+				}else{
+					document.getElementById("username_msg").innerHTML="输入错误"
+				}
+				console.log(res)
+			}
+			function checkpw(){
+				var pw = document.getElementById("pwid")
+				if (pw.value.length <6){
+					document.getElementById("pw_msg").innerHTML="密码不到6位"
+				}else{
+					document.getElementById("pw_msg").innerHTML=""
+				}
+			}
+			function checkemail(){
+				var email = document.getElementById("emailid")
+				var reg = new RegExp("^[a-zA-Z0-9-_]+@[a-zA-Z0-9-_]+([.][a-zA-Z0-9-_])+)$")
+				if(reg.test(email)){
+					
+				}else{
+					
+				}
+			}
+			function checkun(){
+				var reg = new RegExp("^$")
+			}
+		</script>
+	</body>
+</html>

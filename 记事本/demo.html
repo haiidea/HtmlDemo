@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="id" />
+		<input type="button" id="idbn" onclick="addItem()" />
+		<ul id="idul">
+			<li>吃放</li>
+			<li>睡觉</li>
+			<li>打豆豆</li>
+		</ul>
+		<script type="application/javascript">
+			function addItem(){
+				//取输入框
+				var input = document.getElementById("id")
+				//创建新节点
+				var ele = document.createElement("li")
+				//新节点赋值
+				ele.innerHTML = input.value
+				//取新节点的父节点
+				var ul = document.getElementById("idul")
+				//新节点加入到父节点
+				ul.appendChild(ele)
+				input.value=""
+			}
+			
+		</script>
+	</body>
+</html>

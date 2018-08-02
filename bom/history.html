@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<a href="location.html">history页面</a>
+		<br />
+		<input type="button" name="up" id="idup" value="前进" onclick="goup()"/>
+		<input type="button" name="next" id="idnext" value="后退" onclick="goNext()" />
+		<script type="application/javascript">
+			function goup(){
+				history.forward()
+			}
+			function goNext(){
+//				history.back();
+//				和下面一样的
+				history.go(-1)
+			}
+		</script>
+	</body>
+</html>

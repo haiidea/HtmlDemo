@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="application/javascript">
+			var index=0
+			var interval = null;
+			window.onload=function(){
+				interval =setInterval("showAd()",4000)
+			}
+			function showAd(){
+				index++
+				var id = document.getElementById("adid")
+				id.style.display="block"
+				
+				setTimeout("hide()",2000)
+				if (index>=3){
+					clearInterval(interval)
+				}
+			}
+			function hide(){
+				var id = document.getElementById("adid")
+				id.style.display="none"
+			}
+		</script>
+	</head>
+	<body>
+		<div id="adid" style="width: 50%;display: none;">
+			<img src="../img/1.jpg" width="100%" />
+		</div>
+	</body>
+</html>

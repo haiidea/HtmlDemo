@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="application/javascript">
+			var aff=new Array(3)
+			aff[0]=new Array("a1","b1")
+			aff[1]=new Array("a2","b2")
+			aff[2]=new Array("a3","b3")
+			function proChange(obj){
+				console.log(obj.value)
+				var ci = aff[obj.value]
+				console.log(ci)
+				var city = document.getElementById("ci")
+				city.innerHTML='<option value=""></option>'
+				for(var i=0;i<ci.length;i++){
+					var opt=document.createElement("option")
+					opt.innerHTML=ci[i]
+					
+					city.appendChild(opt)
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<select name="pro" id="pro" onchange="proChange(this)">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+		</select>
+		<select name="city" id="ci">
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+		</select>
+	</body>
+</html>

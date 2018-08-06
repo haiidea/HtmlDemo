@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="application/javascript">
+			function selectAll(obj){
+				console.log(obj.checked)
+				var item = document.getElementsByClassName("item")
+				for(var i=0;i<item.length;i++){
+					item[i].checked=obj.checked;
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<table border="1",wwidth="50%",aalign="center">
+			<tr style="background-color: #0000FF;">
+				<th><input type="checkbox" onclick="selectAll(this)"></th>
+				<th>2</th>
+				<th>3</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" class="item"> </td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" class="item"></td>
+				<td>r</td>
+				<td>b</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" class="item"></td>
+				<td>vv</td>
+				<td>dd</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -12,11 +12,19 @@
 			}
 		</style>
 		<script type="application/javascript">
+			var index=1
 			window.onload=function(){
+				console.log("onload")
 				setInterval("timebu()",1000)
 			}
 			function timebu(){
-				document.getElementById()
+				var img = document.getElementById("imgid")
+				img.src="../img/"+index+".jpg"
+				console.log(img.src)
+				index++
+				if (index>3){
+					index=1
+				}
 			}
 		</script>
 	</head>
@@ -27,14 +35,18 @@
 					<img src="../img/logo2.png" id="imgid" height="40%" />
 				</div>
 				<div>
+					<img src="../img/header.jpg" />
+				</div>
+				<div>
 					<a href="#">登录</a>
 					<a href="#">注册</a>
 					<a href="#">购物车</a>
 				</div>
-				<div></div>
 			</div>
-			<div></div>
-			<div></div>
+			<div class="cle"></div>
+			<div class="menu">
+				
+			</div>
 			<div></div>
 			<div></div>
 			<div></div>

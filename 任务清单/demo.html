@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="id" />
+		<input type="button" id="idbn" onclick="addItem()" />
+		<div id="div">
+			
+		</div>
+		<script type="application/javascript">
+			var index=0
+			function addItem(){
+				//取输入框
+				var input = document.getElementById("id")
+				//创建新节点
+				var ele = document.createElement("div")
+				//新节点赋值
+				ele.innerHTML = input.value
+				//取新节点的父节点
+				var ul = document.getElementById("div")
+				//新节点加入到父节点
+				ul.appendChild(ele)
+				//保存数据
+				localStorage.setItem("input"+index++,input.value)
+				localStorage.setItem("total",index)
+				input.value=""
+			}
+			window.onload=function(){
+				var index=0
+				var total = localStorage.getItem("total")
+				for (var i=0;i<total;i++) {
+					//页面加载完读取数据加载
+					var content =localStorage.getItem("input"+i)
+					var ele = document.createElement("div")
+					ele.innerHTML = content;
+					var ul = document.getElementById("div")
+					ul.appendChild(ele)
+				}
+			}
+		</script>
+	</body>
+</html>

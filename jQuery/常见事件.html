@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#e02{
+				border: 1px solid #0000FF;
+				height: 300px;
+				width: 300px;
+			}
+		</style>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#e02").blur(function(){
+					console.log("1");
+					$("#textMsg").val("文本失去焦点blur")
+				}).focus(function(){
+					console.log("1");
+					$("#textMsg").val("文本获取焦点，focus")
+				})
+				$("move").mousedown(function(){
+					
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="text" name="e02" id="e02" value="wenben" />
+		<input type="text" name="textMsg" id="textMsg" value="text" />
+	</body>
+</html>

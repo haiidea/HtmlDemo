@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="username" value="jack" />
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8">
+		</script>
+		<script type="text/javascript">
+//			jQuery等价于$
+//使用jquery方式获取 input的值
+			var un = $("#username");
+			var undom=document.getElementById("username")
+			console.log(un.val());
+			console.log(undom.nodeType);//1是dom对象
+			console.log(un.nodeType);
+			console.log(un.jquery);//是jquery对象
+			//jquery对象和dom对象转换
+			console.log($(undom).jquery)
+			console.log(un.get(0).nodeType);
+			console.log(un[0].nodeType)
+		</script>
+	</body>
+</html>

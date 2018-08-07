@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<input type="text" id="username" value="jack" />
+		<img src="../img/1.jpg"/>
+		<script type="text/javascript">
+			
+			
+		</script>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//只要dom结构完成加载，图片可能没有显示出来额
+			$(document).ready(function(){
+				var un = $("#username")
+				console.log(un.val())
+			})
+			//ready方法简写
+			$(function(){
+				console.log("ready")
+			})
+			//页面所有内容加载完成后才执行
+			window.onload=function(){
+				console.log("windowload")
+			}
+		</script>
+	</body>
+</html>

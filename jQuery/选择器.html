@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+	</head>
+	<body>
+		<div id="di">
+			DIV
+		</div>
+		<span class="cl"></span>
+		<p class="cl" id="p1">P<button>Button</button> </p>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//全局选择器
+			var els=$("*")//获取所有元素
+			var els2=$("body *")//获取body下所有元素
+			for (var i = 0; i < els.length; i++) {
+				console.log(els[i])
+			}
+			console.log(els.length)
+			//类选择器
+			var cl=$(".cl")
+			for (var i = 0; i < cl.length; i++) {
+				console.log(cl[i])
+			}
+			//标签选择器
+			var ele = $("span")
+			for (var i = 0; i < ele.length; i++) {
+				console.log(ele[i])
+			}
+			//id选择器
+			var ele2 = $("#p1")
+			for (var i = 0; i < ele2.length; i++) {
+				console.log(ele2[i])
+			}
+			//群组选择器
+			var ele3=$("#p1,.cl")
+			console.log("群组")
+			for (var i = 0; i < ele3.length; i++) {
+				console.log(ele3[i])
+			}
+			ele3.css("color","red")
+		</script>
+	</body>
+</html>

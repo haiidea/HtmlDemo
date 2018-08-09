@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>北京</li>
+			<li>上海</li>
+			<li>深圳</li>
+			<li>动物</li>
+			<li>李二</li>
+		</ul>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("li:first").css("color","red")
+			$("li:last-child").css("color","blue")
+			$("li:odd").css("color","#008000")//计数
+			$("li:even").css("color","#FF00FF")
+			$("li:eq(0)").css("color","#000")//根据index设置
+			$("li:gt(3)").css("color","#000")//根据比index大
+			$("li:lt(3)").css("color","#000")//根据比index大
+			$("li").first().css("color","#0000FF")//如果有和筛选同名的方法，用方法
+		</script>
+	</body>
+</html>

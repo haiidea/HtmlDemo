@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				border: red solid 1px;
+				width: 300px;
+				height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" name="b1" id="b1" value="show" onclick="slideDown()" />
+		<input type="button" name="b2" id="b2" value="hide" onclick="slideUp()" />
+		<input type="button" name="b3" id="b3" value="toggle" onclick="slide()" />
+		<div id="di">
+			
+		</div>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+				function slideDown(){
+					//括号内可以加时间，为动画执行时间
+					// 动画效果
+					//动画完成监听
+					$("#di").slideUp(800,"swing",function(){
+						alert("动画完成")
+					})
+				}
+				function slideUp(){
+					$("#di").slideDown()
+				}
+				function slide(){
+					$("#di").slideToggle()
+				}
+		</script>
+	</body>
+</html>

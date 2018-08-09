@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>
+				<span>6</span>
+			</li>
+		</ul>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var arr = $("li").has("5")//过滤标签
+			var arr1 = $("li:contains('5')")//内容过滤
+			console.log(arr1.length)
+		</script>
+	</body>
+</html>

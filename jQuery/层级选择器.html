@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="divid">
+			<p>打开qq</p>
+			<p class="pclass">打开百度</p>
+			<p class="pclass">代开新浪</p>
+			<p>打开传智</p>
+			<p>
+				<a id="aId">打开黑马程序员</a>
+				<span>p标签中的span</span>
+				<span>p标签中的span</span>
+			</p>
+			<span>div标签中的span1</span>
+			<span>div标签中的span2</span>
+			<p></p>
+			<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+//				//div下所有的span
+//				$("div span").each(function(){
+//					console.log(this)
+//				})
+				//div下子元素span
+//				$("div>span").each(function(){
+//					console.log(this)
+//				})
+				//div下子元素第一个span
+				console.log($("div span").length)
+				console.log($("div>span").length)
+				console.log($("div+span").length)
+				console.log($("div~span").length)
+				$("div+span").each(function(){
+					console.log(this)
+				})
+				
+				//div下子元素所有span
+				$("div~span").each(function(){
+					console.log(this)
+				})
+			</script>
+		</div>
+		//后代选择器
+		
+	</body>
+</html>

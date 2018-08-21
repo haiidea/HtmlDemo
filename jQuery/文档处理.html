@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="uid">
+			<li >adfa</li>
+			<li id="liid">adfa</li>
+			<li>adf</li>
+		</ul>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//创建一个标签
+			var b = $("<li>").html("vvvv")
+			//添加方法1
+//			$("#uid").append(b)
+			//方法2
+//			b.appendTo($("#uid"))
+			// 添加到头
+//			$("#uid").prepend(b)
+//			b.prependTo($("#uid"))
+			
+			//添加到外部后面，兄弟节点
+//			$("#uid").after(b)
+//			b.insertAfter($("#uid"))
+			//添加到外部前面，兄弟节点
+//			$("#uid").before(b)
+			b.insertBefore($("#liid"))
+		</script>
+	</body>
+</html>

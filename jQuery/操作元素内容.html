@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p id="pid"><a href="#">adfa</a></p>
+		<input type="text" name="um" id="um" value="张三" />
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//设置value
+			$("#um").val("李四")
+			//获取value
+			console.log($("#um").val())
+			//把标签当做文本设置进入
+			$("#pid").text()
+			//把标签设置进入
+			$("#pid").html('<a href="#">bbbb</a>')
+			//获取标签内所有内容，包括标签
+			console.log($("#pid").html())
+			//只获取文本如果中间内嵌标签是获取不到标签的
+			console.log($("#pid").text())
+			
+			
+		</script>
+	</body>
+</html>

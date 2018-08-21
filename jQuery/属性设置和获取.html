@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="radio"  checked="checked" id="nan" value="nan" />
+		<input type="radio"  checked="checked" id="nv" value="nv" />
+		<input type="button" name="bt" id="bt" value="注册" />
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			console.log($("#bt").attr("type"))
+			//设置一个属性，在查看器中查看
+			$("#bt").attr("city","beijing")
+			//设置多个属性
+			$("#bt").attr({"city":"beijing","type":"text"})
+			//设置属性首先考虑attr,如果不生效用prop
+//			$("#bt").prop("city","beijing")
+//用prop设置属性值后用attr读不到值
+			$("#nv").attr("checked","checked")
+			//移除属性
+				$("#bt").removeAttr("name")
+		</script>
+	</body>
+</html>

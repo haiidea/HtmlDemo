@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p class="pclass"></p>
+		<input type="text" name="uname" id="uname" value="zhangsan" />
+		<input type="button" name="bt" id="bt" value="button" />
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//input[type]过滤input标签的有type属性的
+			// [type]过滤所有标签的有type属性的
+			//[type='text'] 过滤type是text的标签
+			var arr=$("input[type='text']")
+			for(var i=0;i<arr.length;i++){
+				console.log(arr[i])
+			}
+		</script>
+	</body>
+</html>

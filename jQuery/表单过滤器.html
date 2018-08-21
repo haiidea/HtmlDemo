@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form>
+			<input type="" />
+			<input type="checkbox" />
+			<section name="city">
+				<option value="北京"></option>
+			</section>
+			<input type="submit" name="su" id="su" value="sub" />
+			<textarea ></textarea>
+		</form>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//过滤所有的表单元素，
+//			var arr = $(":input")
+			//只过滤input标签
+			var arr = $("input")
+			for(var i=0;i<arr.length;i++){
+				console.log(arr[i])
+			}
+		</script>
+	</body>
+</html>

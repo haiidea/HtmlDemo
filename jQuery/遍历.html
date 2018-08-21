@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="radio"  checked="checked" id="nan" value="nan" />
+		<input type="radio"  checked="checked" id="nv" value="nv" />
+		<input type="button" name="bt" id="bt" value="注册" />
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//ele是dom对象
+			$("input").each(function(index,ele){
+				console.log(index+"   "+ele)
+			})
+			$("input").each(function(){
+				console.log(this)
+			})
+			//用css遍历数组
+			var arr=new Array(1,"3","adf")
+			$.each(arr, function() {
+				console.log(this)
+			});
+			
+			$.each(arr, function(index,a) {
+				console.log(index+"  "+a)
+			});
+		</script>
+	</body>
+</html>

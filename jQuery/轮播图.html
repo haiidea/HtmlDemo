@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.foot{
+				width: 100%;
+			}
+			.foot p{
+				text-align: center;
+			}
+		</style>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="application/javascript">
+			var index=1
+			//等价于window.onload=function(){
+			$(function(){
+				setInterval("timebu()",1000)
+			})
+			function timebu(){
+				$("#imgid").attr("src","../img/"+index+".jpg")
+				index++
+				if (index>3){
+					index=1
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<div class="header">
+				<div>
+					<img src="../img/1.jpg" id="imgid" height="40%" />
+				</div>
+				<div>
+					<img src="../img/header.jpg" />
+				</div>
+				<div>
+					<a href="#">登录</a>
+					<a href="#">注册</a>
+					<a href="#">购物车</a>
+				</div>
+			</div>
+			<div class="cle"></div>
+			<div class="menu">
+				
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>

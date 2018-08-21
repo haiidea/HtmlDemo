@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form>
+			<select name="" id="">
+				<option value="1">beijing</option>
+				<option selected="selected" value="2">shanghai</option>
+				<option value="3">shenzhen</option>
+			</select>
+		<input type="text" name="" id="" value="" disabled="disabled" />
+		<input type="button" name="" id="" value="zhuye" />
+		<input type="submit" name="" id="" value="zhuce" />
+		<input type="radio" name="gender" id="gender" value="nan" checked="checked"/>
+		<input type="radio" name="gender" id="gender" value="female" />
+		</form>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+//			$("input:disabled").each(function(){
+//				console.log(this)
+//			})
+//			
+//			$("input:enabled").each(function(){
+//				console.log(this)
+//			})
+			
+//			$("input:checked").each(function(){
+//				console.log(this)
+//			})
+			
+			$("option:selected").each(function(){
+				console.log(this)
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#allid").click(function(){
+					//写法比较复杂
+				console.log(	$("#allid").prop("checked"))
+				// 这样简单点
+				console.log(	$(this).prop("checked"))
+				var flag = $(this).prop("checked")
+					$(".itemselect").prop("checked",flag)
+				})
+			})
+			
+		</script>
+	</head>
+	<body>
+		<table id="tableid" border="1px" width="800" align="center">
+			<tr style="background-color: #0000FF;">
+				<th><input type="checkbox" id="allid" ></th>
+				<th>一</th>
+				<th>二</th>
+				<th>三</th>
+				<th>四</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" class="itemselect"></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" class="itemselect"></td>
+				<td>a</td>
+				<td>s</td>
+				<td>s</td>
+				<td>vv</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" class="itemselect"></td>
+				<td>df</td>
+				<td>r</td>
+				<td>rf</td>
+				<td>gg</td>
+			</tr>
+		</table>
+	</body>
+</html>

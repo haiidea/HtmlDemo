@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				border: solid red 1px;
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			
+		</div>
+		<script src="jquery-1.12.4.min.js " type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//监听鼠标进入和离开
+			$("#div1").hover(function(){
+				console.log("over")
+			},function(){
+				console.log("in")
+			})
+		</script>
+	</body>
+</html>
